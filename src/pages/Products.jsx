@@ -1,5 +1,4 @@
 import React from 'react';
-import { red } from '@mui/material/colors';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -80,7 +79,7 @@ const Products = () => {
         ))}
       </Grid>
 
-      <Card sx={{ maxWidth: 345 }}>
+      {/* <Card sx={{ maxWidth: 345 }}>
         <CardHeader
           avatar={
             <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -129,7 +128,7 @@ const Products = () => {
           </ExpandMore>
 
         </CardActions>
-      </Card>
+      </Card> */}
     </Container>
   );
 };
