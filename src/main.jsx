@@ -1,19 +1,18 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
-import theme from './theme.js'
-import { ThemeProvider } from '@emotion/react'
-import { CssBaseline } from '@mui/material'
+import ThemeContextProvider from './contexts/ThemeContextProvider.jsx'
 
 createRoot(document.getElementById('root')).render(
   // <StrictMode>
   <BrowserRouter>
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
+    {/* <ThemeProvider theme={theme}>
+      <CssBaseline /> */}
+      <ThemeContextProvider>
       <App />
-    </ThemeProvider>
+      </ThemeContextProvider>
+    {/* </ThemeProvider> */}
   </BrowserRouter>
   // </StrictMode>,
 )

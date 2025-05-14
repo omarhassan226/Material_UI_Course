@@ -2,6 +2,7 @@ import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
   palette: {
+    mode: "light",
     primary: {
       main: "#1976d2",
     },
@@ -9,8 +10,12 @@ const theme = createTheme({
       main: "#f50055",
     },
     third: {
-      main: "#c50044"
-    }
+      main: "#c50044",
+    },
+    background: {
+      default: "#f5f5f5",
+      paper: "#ffffff",
+    },
   },
   typography: {
     fontFamily: "Roboto, sans-serif",

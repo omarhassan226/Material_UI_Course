@@ -1,8 +1,11 @@
 import React from 'react';
-import { Typography } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 
 const Contact = () => (
-  <Typography variant="h4">Contact Page</Typography>
+  <>
+    <Typography variant="h4">Contact Page</Typography>
+    <Button color='secondary' variant='outlined'>Hi Contact</Button>
+  </>
 );
 
 export default Contact;
